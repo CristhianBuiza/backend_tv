@@ -41,13 +41,6 @@
       "targetField": "title_channel",
       "required": false
     },
-    "description_main": {
-      "type": "customField",
-      "options": {
-        "preset": "toolbar"
-      },
-      "customField": "plugin::ckeditor5.CKEditor"
-    },
     "diaries": {
       "type": "relation",
       "relation": "manyToMany",
