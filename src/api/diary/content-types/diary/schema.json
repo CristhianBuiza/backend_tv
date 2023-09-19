@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "diaries",
+  "info": {
+    "singularName": "diary",
+    "pluralName": "diaries",
+    "displayName": "diary",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "diary_hour": {
+      "type": "time",
+      "required": true
+    },
+    "diary_description": {
+      "type": "string",
+      "required": true
+    },
+    "channels": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::channel.channel",
+      "inversedBy": "diaries"
+    },
+    "country": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::country.country",
+      "inversedBy": "diaries"
+    },
+    "embed": {
+      "type": "component",
+      "repeatable": true,
+      "component": "embed-channel.embeds"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_meta_tags_tags",
+  "info": {
+    "displayName": "Tags",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "author": {
+      "type": "text"
+    },
+    "robots": {
+      "type": "text"
+    },
+    "keywords": {
+      "type": "text"
+    },
+    "og_image": {
+      "type": "text"
+    },
+    "og_title": {
+      "type": "text"
+    },
+    "viewport": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "og_description": {
+      "type": "text"
+    }
+  }
+}

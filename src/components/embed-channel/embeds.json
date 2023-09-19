@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_embed_channel_embeds",
+  "info": {
+    "displayName": "Embeds",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "embed_name": {
+      "type": "text"
+    },
+    "embed_iframe": {
+      "type": "text"
+    },
+    "embed_link": {
+      "type": "text"
+    }
+  }
+}

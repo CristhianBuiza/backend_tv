@@ -14,7 +14,7 @@
   "attributes": {
     "title_channel": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "image_channel": {
       "type": "media",
@@ -24,26 +24,40 @@
         "images"
       ]
     },
-    "description_channel": {
-      "type": "text",
-      "required": true
+    "subtitle_channel": {
+      "type": "string",
+      "required": false
     },
     "meta_title_channel": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "meta_description_channel": {
       "type": "text",
-      "required": true
-    },
-    "meta_tags_channel": {
-      "type": "json",
-      "required": true
+      "required": false
     },
     "slug_channel": {
       "type": "uid",
       "targetField": "title_channel",
-      "required": true
+      "required": false
+    },
+    "description_main": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "diaries": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::diary.diary",
+      "mappedBy": "channels"
+    },
+    "meta_tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "meta-tags.tags"
     }
   }
 }
