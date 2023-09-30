@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "embeds",
+  "info": {
+    "singularName": "embed",
+    "pluralName": "embeds",
+    "displayName": "embed"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "embed_name": {
+      "type": "string"
+    },
+    "embed_iframe": {
+      "type": "text"
+    },
+    "embed_link": {
+      "type": "text"
+    },
+    "diaries": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::diary.diary",
+      "mappedBy": "embeds"
+    }
+  }
+}

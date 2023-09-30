@@ -32,10 +32,11 @@
       "target": "api::country.country",
       "inversedBy": "diaries"
     },
-    "embed": {
-      "type": "component",
-      "repeatable": true,
-      "component": "embed-channel.embeds"
+    "embeds": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::embed.embed",
+      "inversedBy": "diaries"
     }
   }
 }
