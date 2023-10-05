@@ -58,6 +58,11 @@
         "preset": "toolbar"
       },
       "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "iframes_channel": {
+      "type": "component",
+      "repeatable": true,
+      "component": "iframe-channels.iframe-channel"
     }
   }
 }

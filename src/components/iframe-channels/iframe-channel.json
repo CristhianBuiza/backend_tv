@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_iframe_channels_iframe_channels",
+  "info": {
+    "displayName": "Iframe-channel",
+    "icon": "code"
+  },
+  "options": {},
+  "attributes": {
+    "iframe": {
+      "type": "text"
+    }
+  }
+}
